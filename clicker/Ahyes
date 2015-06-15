@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Input your name and click the button:</p>
+
+<input id="name" value="">
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var name, snusable;
+    name = document.getElementById("name").value;
+    snusable = (name === "Doug" || name === "Andrei") ? "Ayy mah snus":"Not mah snus";
+    document.getElementById("demo").innerHTML = snusable;
+}
+</script>
+
+</body>
+</html>
